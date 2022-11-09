@@ -133,29 +133,23 @@
      <string>WELCOME TO CAR RENTAL SYSTEM</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="label_5">
     <property name="geometry">
      <rect>
-      <x>562</x>
-      <y>359</y>
-      <width>111</width>
-      <height>31</height>
+      <x>550</x>
+      <y>340</y>
+      <width>121</width>
+      <height>61</height>
      </rect>
     </property>
     <property name="font">
      <font>
       <pointsize>12</pointsize>
+      <bold>true</bold>
      </font>
     </property>
-    <property name="styleSheet">
-     <string notr="true">QPushButton {
-	background-color: #0000FF;
-	border: 1px solid gray;
-	padding: 5px;
-}</string>
-    </property>
     <property name="text">
-     <string>no account?</string>
+     <string>no_account?</string>
     </property>
    </widget>
   </widget>

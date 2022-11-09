@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "sign_in.h"
 #include "login.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -17,7 +18,6 @@ public:
     ~MainWindow();
 
 private slots:
-   // void on_pushButton_clicked();
 
     void on_pushButton_2_clicked();
 
