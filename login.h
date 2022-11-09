@@ -5,6 +5,7 @@
 #include <QtSql>
 #include <QDebug>
 #include <QFileInfo>
+#include "bookcar.h"
 
 namespace Ui {
 class login;
@@ -22,7 +23,7 @@ public:
     }
     bool connOpen(){
     mydb = QSqlDatabase::addDatabase("QSQLITE");
-    mydb.setDatabaseName("C:/Users/Sonali Gaonkar/Desktop/Qt/CarRentalSystem/database.db");
+    mydb.setDatabaseName("C:/Users/Sonali Gaonkar/Desktop/Qt/CarRentalSystem/data.db");
     if(!mydb.open()){
         qDebug()<<("Failed to open database");
     return false;
@@ -43,6 +44,7 @@ private slots:
 
 private:
     Ui::login *ui;
+    bookcar *book;
 };
 
 #endif // LOGIN_H

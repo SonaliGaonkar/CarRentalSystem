@@ -1,12 +1,14 @@
 #include "sign_in.h"
 #include "ui_sign_in.h"
 #include <QMessageBox>
+#include "login.h"
 
 sign_in::sign_in(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::sign_in)
 {
     ui->setupUi(this);
+
 }
 
 sign_in::~sign_in()
@@ -38,5 +40,12 @@ void sign_in::on_pushButton_clicked()
     else{
         QMessageBox::critical(this,tr("error::"),qry.lastError().text());
     }
+}
+
+
+void sign_in::on_pushButton_2_clicked()
+{
+    log = new login(this);
+    log->show();
 }
 

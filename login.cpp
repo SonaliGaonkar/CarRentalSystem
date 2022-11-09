@@ -34,10 +34,12 @@ void login::on_pushButton_clicked()
          while(qry.next()){
              count++;
          }
-         if(count ==1)
+         if(count == 1)
              QMessageBox::information(this,tr("Login"),tr(" Login Successful!!! "));
 
          connClose();
+         book = new bookcar(this);
+         book->show();
      }
 }
 

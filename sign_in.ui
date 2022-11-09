@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>602</width>
-    <height>596</height>
+    <width>628</width>
+    <height>638</height>
    </rect>
   </property>
   <property name="palette">
@@ -53,6 +53,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>18</pointsize>
      <bold>true</bold>
     </font>
@@ -72,6 +73,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>18</pointsize>
      <bold>true</bold>
     </font>
@@ -91,6 +93,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>18</pointsize>
      <bold>true</bold>
     </font>
@@ -110,6 +113,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>18</pointsize>
      <bold>true</bold>
     </font>
@@ -129,6 +133,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>18</pointsize>
      <bold>true</bold>
     </font>
@@ -146,6 +151,11 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_2">
    <property name="geometry">
@@ -155,6 +165,11 @@
      <width>341</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
    </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_3">
@@ -166,6 +181,11 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_4">
    <property name="geometry">
@@ -176,6 +196,11 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
   </widget>
   <widget class="QLineEdit" name="lineEdit_5">
    <property name="geometry">
@@ -185,6 +210,11 @@
      <width>341</width>
      <height>41</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
@@ -198,6 +228,7 @@
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>12</pointsize>
      <bold>true</bold>
     </font>
@@ -209,20 +240,21 @@
   <widget class="QPushButton" name="pushButton_2">
    <property name="geometry">
     <rect>
-     <x>440</x>
-     <y>500</y>
-     <width>111</width>
+     <x>470</x>
+     <y>560</y>
+     <width>141</width>
      <height>41</height>
     </rect>
    </property>
    <property name="font">
     <font>
+     <family>Arial</family>
      <pointsize>12</pointsize>
-     <bold>true</bold>
+     <bold>false</bold>
     </font>
    </property>
    <property name="text">
-    <string>Cancel</string>
+    <string>back to login</string>
    </property>
   </widget>
  </widget>
