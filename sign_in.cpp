@@ -32,7 +32,7 @@ void sign_in::on_pushButton_clicked()
     QSqlQuery qry;
     qry.prepare("insert into data (Name,MobileNo,Address,Username,Password) values ('"+name+"','"+mobile_no+"','"+address+"','"+username+"','"+password+"')");
     if(qry.exec()){
-        QMessageBox::critical(this,tr("Save"),tr("Saved"));
+        QMessageBox::question(this,tr("Save"),tr("Are you sure you want to save ? "));
         conn.connClose();
     }
     else{

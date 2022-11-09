@@ -1,5 +1,6 @@
 #include "login.h"
 #include "ui_login.h"
+#include <QMessageBox>
 
 login::login(QWidget *parent) :
     QDialog(parent),
@@ -34,7 +35,7 @@ void login::on_pushButton_clicked()
              count++;
          }
          if(count ==1)
-         ui->label->setText("Login successful");
+             QMessageBox::information(this,tr("Login"),tr(" Login Successful!!! "));
 
          connClose();
      }
