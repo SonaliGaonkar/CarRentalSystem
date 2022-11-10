@@ -13,18 +13,21 @@ SOURCES += \
     login.cpp \
     main.cpp \
     mainwindow.cpp \
+    otp.cpp \
     sign_in.cpp
 
 HEADERS += \
     bookcar.h \
     login.h \
     mainwindow.h \
+    otp.h \
     sign_in.h
 
 FORMS += \
     bookcar.ui \
     login.ui \
     mainwindow.ui \
+    otp.ui \
     sign_in.ui \
     sign_in.ui \
     sign_in.ui

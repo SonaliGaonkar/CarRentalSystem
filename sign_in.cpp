@@ -8,7 +8,6 @@ sign_in::sign_in(QWidget *parent) :
     ui(new Ui::sign_in)
 {
     ui->setupUi(this);
-
 }
 
 sign_in::~sign_in()
@@ -41,11 +40,8 @@ void sign_in::on_pushButton_clicked()
         QMessageBox::critical(this,tr("error::"),qry.lastError().text());
     }
 }
-
-
 void sign_in::on_pushButton_2_clicked()
 {
     log = new login(this);
     log->show();
 }
-

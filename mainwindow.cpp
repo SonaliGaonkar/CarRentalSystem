@@ -20,11 +20,8 @@ void MainWindow::on_pushButton_2_clicked()
     sign = new sign_in(this);
     sign->show();
 }
-
-
 void MainWindow::on_pushButton_clicked()
 {
     log = new login(this);
     log->show();
 }
-

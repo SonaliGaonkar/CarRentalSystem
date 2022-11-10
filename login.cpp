@@ -42,4 +42,3 @@ void login::on_pushButton_clicked()
          book->show();
      }
 }
-
