@@ -18,9 +18,9 @@ public:
 
 private slots:
 
-       void on_pushButton_clicked();
+       void on_saveButton_clicked();
 
-       void on_pushButton_2_clicked();
+       void on_backButton_clicked();
 
 private:
     Ui::sign_in *ui;

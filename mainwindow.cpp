@@ -17,15 +17,16 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_signinButton_clicked()
 {
     hide();
     sign_in *sign = new sign_in(this);
     sign->show();
 }
-void MainWindow::on_pushButton_clicked()
+void MainWindow::on_loginButton_clicked()
 {
     hide();
     login *log = new login(this);
     log->show();
 }
+

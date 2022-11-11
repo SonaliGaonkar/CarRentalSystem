@@ -39,9 +39,9 @@ public:
 
 private slots:
 
-    void on_pushButton_clicked();
+    void on_loginButton_clicked();
 
-    void on_pushButton_2_clicked();
+    void on_backButton_clicked();
 
 private:
     Ui::login *ui;

@@ -17,7 +17,7 @@ login::~login()
     delete ui;
 }
 
-void login::on_pushButton_clicked()
+void login::on_loginButton_clicked()
 {
     QString username, password;
     username = ui->lineEdit->text();
@@ -61,7 +61,7 @@ void login::on_pushButton_clicked()
         }
     }
 }
-void login::on_pushButton_2_clicked()
+void login::on_backButton_clicked()
 {
     hide();
     MainWindow *main = new MainWindow(this);
