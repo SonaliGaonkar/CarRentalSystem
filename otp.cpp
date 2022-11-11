@@ -1,5 +1,6 @@
 #include "otp.h"
 #include "ui_otp.h"
+#include "mainwindow.h"
 
 otp::otp(QWidget *parent) :
     QDialog(parent),
@@ -12,4 +13,11 @@ otp::otp(QWidget *parent) :
 otp::~otp()
 {
     delete ui;
+}
+
+void otp::on_pushButton_clicked()
+{
+    hide();
+    MainWindow *main = new MainWindow(this);
+    main->show();
 }
