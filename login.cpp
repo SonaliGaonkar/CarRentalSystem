@@ -37,30 +37,31 @@ void login::on_loginButton_clicked()
         }
         connOpen();
         QSqlQuery qry;
-        qry.prepare("select * from data where Username='" + username + "'and Password ='" + password + "'");
+        qry.prepare("select * from data where username='" + username + "'and password ='" + password + "'");
         if (qry.exec())
         {
-            int count;
+            int count = 0;
             while (qry.next())
             {
                 count++;
             }
             if (count == 1)
             {
-                QMessageBox::information(this, tr("Login"), tr(" Login Successful!!! "));
 
-                connClose();
+                QMessageBox::information(this, tr("Login"), tr(" Login Successful!!! "));
                 hide();
                 bookcar *book = new bookcar(this);
                 book->show();
             }
-        else
-        {
-            QMessageBox::critical(this, tr("Login"), tr(" Enter valid data "));
-        }
+            else
+            {
+                QMessageBox::critical(this, tr("Login"), tr("Enter valid data "));
+                connClose();
+            }
         }
     }
 }
+
 void login::on_backButton_clicked()
 {
     hide();

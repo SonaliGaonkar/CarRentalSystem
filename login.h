@@ -22,7 +22,7 @@ public:
     }
     bool connOpen(){
     mydb = QSqlDatabase::addDatabase("QSQLITE");
-    mydb.setDatabaseName("C:/Users/Sonali Gaonkar/Desktop/Qt/CarRentalSystem/data.db");
+    mydb.setDatabaseName("C:/Users/Sonali Gaonkar/Desktop/Qt/CarRentalSystem/databases.db");
     if(!mydb.open()){
         qDebug()<<("Failed to open database");
     return false;

@@ -36,7 +36,7 @@ void sign_in::on_saveButton_clicked()
             qDebug() << "Failed to open database.";
             return;
         }
-        conn.connOpen();
+        conn.connOpen();           ;
         QSqlQuery qry;
         qry.prepare("insert into data (Name,MobileNo,Address,Username,Password) values ('" + name + "','" + mobile_no + "','" + address + "','" + username + "','" + password + "')");
         if (qry.exec())
