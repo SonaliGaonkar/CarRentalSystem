@@ -17,11 +17,13 @@ MainWindow::~MainWindow()
 }
 void MainWindow::on_pushButton_2_clicked()
 {
+    hide();
     sign = new sign_in(this);
     sign->show();
 }
 void MainWindow::on_pushButton_clicked()
 {
+    hide();
     log = new login(this);
     log->show();
 }

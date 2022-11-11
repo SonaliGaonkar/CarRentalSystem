@@ -38,6 +38,7 @@ void login::on_pushButton_clicked()
              QMessageBox::information(this,tr("Login"),tr(" Login Successful!!! "));
 
          connClose();
+         hide();
          book = new bookcar(this);
          book->show();
      }

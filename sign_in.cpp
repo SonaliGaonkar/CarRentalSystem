@@ -42,6 +42,7 @@ void sign_in::on_pushButton_clicked()
 }
 void sign_in::on_pushButton_2_clicked()
 {
+    hide();
     log = new login(this);
     log->show();
 }

@@ -17,24 +17,28 @@ bookcar::~bookcar()
 void bookcar::on_pushButton_clicked()
 {
      QMessageBox::information(this,tr("Booking"),tr(" Your car is booked Successfully!!! "));
+     hide();
      ot = new otp(this);
      ot->show();
 }
 void bookcar::on_pushButton_2_clicked()
 {
   QMessageBox::information(this,tr("Booking"),tr(" Your car is booked Successfully!!! "));
+   hide();
   ot = new otp(this);
   ot->show();
 }
 void bookcar::on_pushButton_3_clicked()
 {
      QMessageBox::information(this,tr("Booking"),tr(" Your car is booked Successfully!!! "));
+      hide();
      ot = new otp(this);
      ot->show();
 }
 void bookcar::on_pushButton_4_clicked()
 {
     QMessageBox::information(this,tr("Booking"),tr(" Your car is booked Successfully!!! "));
+     hide();
     ot = new otp(this);
     ot->show();
 }
