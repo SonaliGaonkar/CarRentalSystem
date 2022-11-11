@@ -2,8 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "sign_in.h"
-#include "login.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -23,9 +21,7 @@ private slots:
 
     void on_pushButton_clicked();
 
-private:
+public:
     Ui::MainWindow *ui;
-    login *log;
-    sign_in *sign;
 };
 #endif // MAINWINDOW_H

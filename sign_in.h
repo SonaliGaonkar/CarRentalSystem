@@ -2,7 +2,6 @@
 #define SIGN_IN_H
 
 #include <QDialog>
-#include "login.h"
 
 namespace Ui {
 class sign_in;
@@ -25,7 +24,6 @@ private slots:
 
 private:
     Ui::sign_in *ui;
-    login *log;
 };
 
 #endif // SIGN_IN_H

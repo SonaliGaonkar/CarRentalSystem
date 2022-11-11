@@ -5,7 +5,6 @@
 #include <QtSql>
 #include <QDebug>
 #include <QFileInfo>
-#include "bookcar.h"
 
 namespace Ui {
 class login;
@@ -42,9 +41,10 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::login *ui;
-    bookcar *book;
 };
 
 #endif // LOGIN_H
